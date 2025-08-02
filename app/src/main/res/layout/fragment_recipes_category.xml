@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a category and start cooking!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/category_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_salads"
+                android:text="Salads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_soups"
+                android:text="Soups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_pasta"
+                android:text="Pasta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_pastries"
+                android:text="Pastries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_select_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:backgroundTint="#D200FF"
+            android:textColor="#ffffff"
+            android:layout_marginTop="32dp"/>
+    </LinearLayout>
+</ScrollView>
